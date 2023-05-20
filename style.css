@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gep{
+    width: 1100px;
+    height: 300px;
+    box-shadow: inset 0 0 20px orangered;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ablak{
+    width: 250px;
+    height: 250px;
+    box-shadow: inset 0 0 10px orangered;
+    border-radius: 15px;
+}
+
+.start{
+    width: 200px;
+    height: 150px;
+    box-shadow: inset 0 0 10px gold;
+    font-size: 3em;
+    color: gold;
+    transition-duration: 0.5s;
+}
+
+img{
+    width: 200px;
+}
+
+.penz{
+    position: absolute;
+    bottom: 10px;
+    width: 400px;
+}
+
+.elrejt{
+    visibility: hidden;
+}
+
+.nevjegy{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #555555;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+.razd{
+    animation: shake 1s;
+    animation-iteration-count: 2;
+}
+.razd2{
+    animation: shake 1s;
+    animation-iteration-count: 10;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
